@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>test</title>
+    <style>
+        div{border: 1px solid red;}
+        .aa{width:300px;height: 200px;margin:0 auto;}
+        .bb{
+
+        }
+        .cc{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 240px;
+            width: 70%;
+        }
+        .con{/*在父元素上加这三句 实现子元素的垂直水平居中*/
+            justify-content:center;
+            align-items:center;
+            display:-webkit-flex;
+        }
+        .center { /*无固定宽高的div垂直居中*/
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            background-color: #000;
+            opacity: 0.1;
+            width:50%;
+            height: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <div class="bb">
+            bbbbbbbbbbbb
+        </div>
+    </div>
+    <div class="cc">
+        ccccccccccccccc
+    </div>
+    <div class="con">
+        <div class="dd">
+            <li>ddddd</li>
+            <li>ddd</li>
+            <li>d</li>
+            <li>dddd</li>
+            <li>dddddddddd</li>
+        </div>
+    </div>
+    <div class="center"></div>
+</body>
+</html>
