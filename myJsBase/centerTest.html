@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>centerTest</title>
+    <style>
+        .container{
+            width:200px;
+            height:200px;
+            background-color: green;
+            margin:0 auto;
+            position:relative;
+        }
+        .center2{
+            /*文字水平居中*/
+            text-align: center;
+            /*文字垂直居中*/
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color: red;
+            /*内部div完全居中于外部div*/
+            width:50%;
+            height:50%;
+            overflow: auto;
+            margin:auto;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <!-- test -->
+    <div class="container">
+        <div class="center2">
+            skal
+        </div>
+    </div>
+</body>
+</html>
