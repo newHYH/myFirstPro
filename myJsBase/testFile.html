@@ -37,7 +37,12 @@
             -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
         }
-        
+        .textLong{
+            width:50px;
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +64,9 @@
         </div>
     </div>
     <div class="center"></div>
+    <li class="textLong">
+        ssssssssss
+    </li>
     <script>
     var storage = window.localStorage;
     var cookie = document.cookie;
@@ -96,6 +104,11 @@
     console.log(foo3);//foo {name: "John", age: 23}
     console.log(foo3.sayName())
     console.log(foo3.__proto__)//
+
+    // 404跳转
+    // if(foo2==23){
+    //     window.location = "centerTest1.html";
+    // }
     </script>
 </body>
 </html>
